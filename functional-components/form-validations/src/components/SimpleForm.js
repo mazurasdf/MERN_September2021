@@ -30,10 +30,16 @@ const SimpleForm = (props) => {
                 !lengthError(allForm.topping, 5);
     }
 
+    const onSubmitHandler = (event) => {
+        event.preventDefault();
+
+        console.log(form);
+    }
+
     return(
         <div className="form">
             <h1>Build a sundae! with an easier form</h1>
-            <form>
+            <form onSubmit={onSubmitHandler}>
                 {/* name, flavor, topping, num scoops, sauce, whipped cream and cherry */}
                 <div className="form-group">
                     <label>Name</label>
