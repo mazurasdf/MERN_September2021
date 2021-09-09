@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <div id="header">
-          <Link to="list" className="btn btn-outline-primary">To List Builder</Link>
+          <Link to="/list" className="btn btn-outline-primary">To List Builder</Link>
           <Link to="/pokemon/ditto" className="btn btn-outline-dark mx-2">Search for pokemon</Link>
         </div>
 
@@ -18,7 +18,7 @@ function App() {
             <PokeList/>
           </Route>
 
-          <Route exact path="pokemon/:name">
+          <Route exact path="/pokemon/:name">
             <SinglePokemon/>
           </Route>
         </Switch>

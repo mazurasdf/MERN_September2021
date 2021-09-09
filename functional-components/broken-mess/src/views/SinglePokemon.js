@@ -4,7 +4,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import ImageBox from '../components/ImageBox';
 
 const SinglePokemon = (props) => {
-    const [pokemon, setPokemon] = useState();
+    const [pokemon, setPokemon] = useState({});
     const [search, setSearch] = useState("");
     const history = useHistory();
     const {name} = useParams();
@@ -12,7 +12,7 @@ const SinglePokemon = (props) => {
     useEffect(()=>{
         axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`)
             .then(res => {
-                setPokemon(res);
+                setPokemon(res.data);
             })
             .catch(err => console.log(err));
     },[name])
