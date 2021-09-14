@@ -43,7 +43,7 @@ with your gracious host: @mazurasdf
 #### Don't forget these steps when setting up your full stack project!
 * create project folder
 * create server.js with boilerplate code adjusted for the name of your routes file
-* run `npm init`
+* run `npm init -y`
 * run `npm install express mongoose cors`
     * this adds all the necessary dependencies for our back end
 * set up the file structure as such
