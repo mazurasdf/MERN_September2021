@@ -51,7 +51,7 @@ with your gracious host: @mazurasdf
     * don't forget to add the files and code in the server folder!
 * create the frontend by running `npx create-react-app client` from the main project folder
 * `cd client/`
-* run `npm install axios reach-router-dom`
+* run `npm install axios react-router-dom`
     * this adds the dependencies we need for the front end
 
 :broccoli: :broccoli: :broccoli:
