@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+
+.header{
+  height: 35px;
+  width: 100%;
+  background-color: bisque;
+  border-bottom: 2px solid rgb(167, 146, 120);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.albumCard{
+  border: 1px solid black;
+  background-color: palevioletred;
+  width: 250px;
+}
+
+.albumCard > img{
+  width: 100%;
+}
