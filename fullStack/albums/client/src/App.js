@@ -4,6 +4,8 @@ import axios from 'axios';
 import {useEffect, useState} from 'react';
 import Create from './views/Create';
 import AllAlbums from './views/AllAlbums';
+import SingleAlbum from './views/SingleAlbum';
+import Edit from './views/Edit';
 import {BrowserRouter, Link, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -22,6 +24,14 @@ function App() {
 
           <Route exact path="/albums/new">
             <Create/>
+          </Route>
+
+          <Route exact path="/albums/:_id">
+            <SingleAlbum/>
+          </Route>
+
+          <Route exact path="/albums/:_id/edit">
+            <Edit/>
           </Route>
         </Switch>
       </BrowserRouter>      

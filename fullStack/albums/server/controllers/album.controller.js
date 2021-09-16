@@ -28,7 +28,8 @@ module.exports.deleteSingleAlbum = (req,res) => {
 
 module.exports.updateSingleAlbum = (req,res) => {
     Album.updateOne({_id:req.params._id},
-        req.body)
+        req.body,
+        {runValidators: true})
         .then(singleAlbum => res.json({results: singleAlbum}))
         .catch(err => res.json({message: "that didn't quite work", err}))
 }
