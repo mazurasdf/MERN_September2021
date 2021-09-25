@@ -3,3 +3,5 @@ functional-components/todo-list/
 **/node_modules
 
 belts/
+
+certs/
